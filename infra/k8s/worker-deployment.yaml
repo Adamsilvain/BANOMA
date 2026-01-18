@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: banoma-worker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: banoma-worker
+  template:
+    metadata:
+      labels:
+        app: banoma-worker
+    spec:
+      containers:
+        - name: worker
+          image: banoma/worker:latest
+          envFrom:
+            - secretRef:
+                name: banoma-secrets
