@@ -1,6 +1,30 @@
 MIT License
 
-Copyright (c) 2026 Adama Ouédraogo
+git fetch origin
+git checkout -b add/license
+cat > LICENSE.md <<'EOF'
+Propriétaire – Tous droits réservés
+
+Copyright (c) 2026 Adama OUEDRAOGO
+
+Ce logiciel et l’ensemble de ses composants (code source, documentation, design, ressources, architecture) sont la propriété exclusive d’Adama OUEDRAOGO.
+
+Autorisation limitée :
+- Le dépôt peut être consulté uniquement à des fins éducatives ou d’évaluation personnelle.
+- Le code ne peut être téléchargé, copié, modifié, redistribué ou utilisé à des fins commerciales sans autorisation écrite préalable.
+
+Contributions :
+- Toute contribution proposée devient automatiquement la propriété exclusive d’Adama OUEDRAOGO, sauf accord écrit contraire.
+
+Responsabilité :
+- Le logiciel est fourni “tel quel”, sans aucune garantie. Adama OUEDRAOGO ne peut être tenu responsable de toute perte ou dommage résultant de son utilisation.
+
+Contact :
+- Pour toute demande d’autorisation ou partenariat : ton.email@exemple.com
+EOF
+git add LICENSE.md
+git commit -m "chore(license): add proprietary LICENSE.md (Adama OUEDRAOGO)"
+git push -u origin add/licenseCopyright (c) 2026 Adama Ouédraogo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
